@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<title>Slide Up</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<style>
+head,body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif;}
+.center {
+    margin: auto;
+    width: 60%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
+.two{
+  z-index: 999;
+position: absolute;
+  padding-top: 0px;
+  padding-left: 10px;
+}
+.model{
+  position: absolute;
+}
+.question{
+  background-color: blue;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+head {
+	postion:fixed;
+}
+body {
+  padding-top: 70px; /*50px for the height of the navbar + 37px for the offset*/
+  padding-bottom: 0px; /*50px for the height of the bottom navbar*/
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  background-color: white;
+}
+#moduleContent18520661 {
+    position: fixed;
+    bottom: 0; /* the bottom edge of the element will
+                  sit against the bottom edge of the window */
+    /* other stuff */
+}
+#scroll {
+width:100%;
+height:1;
+margin:auto;
+background:#A3CBE0;
+border:0px solid #000;
+overflow:auto;
+position: absolute;
+bottom:0;
+box-shadow:0 0 0px #000;
+}
+#scroll ul {
+white-space:nowrap;
+list-style:none;
+}
+#scroll li {
+margin:15px;
+text-align:center;
+display:-moz-inline-box;
+display:inline-block;
+}
+#scroll img {
+border:0;
+display:block;
+border:1px solid #A3CBE0;
+}
+#scroll a:active img, #scroll a:focus img, #scroll a:hover img {
+border:1px solid #000;
+}
+#scroll a {
+text-decoration:none;
+font-weight:bold;
+color:#000;
+}
+#scroll a:active, #scroll a:focus, #scroll a:hover {
+color:#FFF;
+}
+#scroll span {
+padding:5px 0 0;
+display:block;
+}
+</style>
+
+<head>
+<!-- Sidebar/menu -->
+
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top  w3-blue w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-blue w3-margin-right" onclick="w3_open()">Poll.io</a>
+  <span class="w3-button w3-right">Create Poll</span>
+</header>
+</head>
+
+<body>
+
+  <form class="w3-container w3-card-4">
+<br>
+<p>
+<label class="w3-text-grey">Poll Question</label>
+<input class="w3-input w3-border" type="text" required="">
+</p>
+<p>
+<label class="w3-text-grey">Answer 1</label>
+<input class="w3-input w3-border" type="text" required="">
+</p>
+<p>
+<label class="w3-text-grey">Answer 2</label>
+<input class="w3-input w3-border" type="text" required="">
+</p>
+<br>
+  <div class="w3-half">
+    <input id="male" class="w3-radio" type="radio" name="gender" value="male" checked="">
+    <label class="w3-text-grey">Allow Additional Answers</label>
+  </div>
+  </div>
+  <p><button type="button" class="w3-btn w3-padding w3-margin-bottom w3-right w3-blue" style="width:120px">Create &nbsp; ❯</button></p>
+</form>
+<div class="qp-layout w3-margin-top" att="rid,fullbg,btnc,icon" k="37" rid="d22" tk="37" fullbg="0" btnc="0" h="L"><div class="qp-theme-del" att="rem::click" tk="37"></div><div class="qp-layout-b" att="themeL::click" tk="37"><div class="qp-layout-z"><div style="" att="qp_bg::css" tk="37"><div att="qp_b::css" tk="37" style="border-radius: 0px; margin: 0px auto; padding: 15px; background-color: rgb(0, 109, 197); font-family: &quot;Open Sans&quot;, sans-serif, Arial; color: rgb(0, 0, 0); border: 1px solid rgb(0, 67, 121); max-width: 815px; box-sizing: border-box;"><div att="qp_q::css" tk="37" style="font-size: 1.2em; background-color: rgb(0, 67, 121); color: rgb(255, 255, 255); font-family: &quot;Open Sans&quot;, sans-serif, Arial;"><div att="qp_qi::css,html::translate" tk="37" style="line-height: 30px; padding: 10px 15px;">Want a poll?</div></div><form att="qp_ab::css" onsubmit="return false" tk="37" style="display: inline; margin: 0px; padding: 0px;"><div att="qp_to::css" tk="37" style="margin: 10px 0px 0px; padding: 10px; background-color: rgb(0, 141, 255); border-radius: 6px; display: none;"><span att="qp_tn::css,html::translate" tk="37" style="display: table-cell; color: rgb(255, 255, 255); font-family: &quot;Open Sans&quot;, sans-serif, Arial; font-size: 16px; line-height: 1.5; padding-right: 10px;">Name:</span><span att="qp_tf::css" tk="37" style="display: table-cell; width: 100%; padding-right: 0px; box-sizing: border-box;"><input att="qp_tv::css" type="text" value="" tk="37" style="width: 100%; min-width: 40px; padding: 5px; box-sizing: border-box;"></span></div><div att="qp_ao::css" tk="37" style="padding: 0px;"><div att="qp_a::css" tk="37" style="display: block; color: rgb(255, 255, 255); background-color: rgb(0, 141, 255); font-family: &quot;Open Sans&quot;, sans-serif, Arial; font-size: 1.1em; line-height: 1.5; padding: 13px 8px 10px; margin: 10px 0px; clear: both; border-radius: 6px;"><span att="qp_t::css" tk="37" style="display: block; padding-left: 30px; cursor: inherit;"><input att="qp_i::css" type="radio" tk="37" style="float: left; width: 20px; margin-left: -25px; margin-top: 2px; padding: 0px; height: 20px;"><font att="html::translate" tk="37">Yes</font></span></div><div att="qp_a::css" tk="37" style="display: block; color: rgb(255, 255, 255); background-color: rgb(0, 141, 255); font-family: &quot;Open Sans&quot;, sans-serif, Arial; font-size: 1.1em; line-height: 1.5; padding: 13px 8px 10px; margin: 10px 0px; clear: both; border-radius: 6px;"><span att="qp_t::css" tk="37" style="display: block; padding-left: 30px; cursor: inherit;"><input att="qp_i::css" type="radio" tk="37" style="float: left; width: 20px; margin-left: -25px; margin-top: 2px; padding: 0px; height: 20px;"><font att="html::translate" tk="37">No</font></span></div></div><div att="qp_bo::css" tk="37" style="padding-left: 0px; clear: both; text-align: left; margin: 1em auto;"><a class="qp_btna" att="qp_hra::css" href="#" tk="37" style="display: inline-block; box-sizing: border-box; padding-right: 5px; text-decoration: none;"><input name="qp_b" att="qp_btn::css,value::translate" type="submit" value="Vote" tk="37" style="min-width: 8.5em; padding: 0.5em; background-color: rgb(0, 67, 121); font-family: &quot;Open Sans&quot;, sans-serif, Arial; font-size: 16px; color: rgb(255, 255, 255); cursor: pointer; border: 0px; -webkit-appearance: none; border-radius: 0px;"></a><a class="qp_btna" att="qp_hrb::css" href="#" tk="37" style="display: inline-block; box-sizing: border-box; padding-left: 5px; text-decoration: none;"><input name="qp_b" att="qp_btn::css,value::translate" type="submit" value="Results" tk="37" style="min-width: 8.5em; padding: 0.5em; background-color: rgb(0, 67, 121); font-family: &quot;Open Sans&quot;, sans-serif, Arial; font-size: 16px; color: rgb(255, 255, 255); cursor: pointer; border: 0px; -webkit-appearance: none; border-radius: 0px;"></a></div></form></div><div att="qp_hh:css" css="display:none" tk="37"><div att="qp_title::css" tk="37" style=""></div><div att="qp_rv::css" tk="37" style="font-size: 11px; width: 0%; line-height: 1.5em; text-align: right; color: rgb(255, 255, 255); box-sizing: border-box; padding-right: 3px;"></div><div att="qp_rp::css" tk="37" style="font-size: 11px; width: 5ex; text-align: right; overflow: hidden; position: absolute; right: 5px; height: 1.5em; line-height: 1.5em;"></div><div att="qp_rb::css" tk="37" style="color: rgb(255, 255, 255); display: block; font-size: 12px;"></div><div att="qp_rva::css" tk="37" style="background: rgb(0, 111, 185); border-color: rgb(0, 111, 185);"></div><div att="qp_rvb::css" tk="37" style="background: rgb(22, 52, 99); border-color: rgb(22, 52, 99);"></div><div att="qp_rvc::css" tk="37" style="background: rgb(91, 207, 252); border-color: rgb(20, 129, 171);"></div></div></div></div>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+</body>
+</html>
